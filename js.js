@@ -20,5 +20,6 @@ function showBike(bike) {
     clone.querySelector(".price span").textContent = "$" + `${bike.price}`;
     clone.querySelector(".colours span").textContent = bike.colours;
     clone.querySelector(".status span").textContent = bike.stock;
+    clone.querySelector("img").src=bike.images.guid;
     document.querySelector("#bikestock").appendChild(clone);
 }
