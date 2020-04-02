@@ -64,8 +64,7 @@ article {
     padding: 2rem;
 }
 
-article > h3,
-h1 {
+article > h3, h1 {
     margin: 1rem 1rem 0;
 }
 
@@ -83,7 +82,8 @@ article {
 }
 
 article > button {
-    margin-top: auto;
+    margin-top: 5%;
+    margin-bottom: auto;
     padding: 0.5rem;
     font-size: 1.2rem;
     font-weight: bold;
@@ -128,6 +128,11 @@ nav div span:hover {
 h3 {
     font-family: var(--secondary-font);
     font-size: 14px;
+}
+
+h1 {
+    margin-top: 2%;
+    margin-bottom: 7%;
 }
 
 article p {
