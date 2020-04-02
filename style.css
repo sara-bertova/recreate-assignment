@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Signika:300,400,600,700&display=swap');
+
 :root {
-    --bg-color: #f2efea;
     --primary-font: 'Libre Baskerville', serif;
+    --secondary-font: 'Fira Sans', sans-serif;
+    --tertiary-font: 'Signika', sans-serif;
+    --bg-color: #f2efea;
     --nav-color: #686868;
     --nav-color-2: #722d23;
+    --color-1: #221610;
+    --button-hover: #9a581b;
 }
 
 *,
@@ -13,7 +21,7 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     background-color: var(--bg-color);
     margin: 2%;
 }
@@ -55,7 +63,8 @@ article {
     padding: 2rem;
 }
 
-article > h3 {
+article > h3,
+h1 {
     margin: 1rem 1rem 0;
 }
 
@@ -64,7 +73,7 @@ article > p {
 }
 
 main {
-   /* font-family: var(--primary-font);*/
+    /* font-family: var(--primary-font);*/
     font-size: 80%;
 }
 
@@ -74,13 +83,9 @@ article {
 
 article > button {
     margin-top: auto;
-    background: var(--color-4);
-    color: var(--link-color);
     padding: 0.5rem;
-    border: none;
     font-size: 1.2rem;
     font-weight: bold;
-    cursor: pointer;
 }
 
 img {
@@ -91,23 +96,27 @@ img {
 
 /*--NAVIGATION MENU--*/
 
-nav, h1{
+nav,
+h1 {
     font-family: var(--primary-font);
     letter-spacing: 3px;
     font-weight: bolder;
-    display:flex;
+    display: flex;
     font-size: 16px;
 }
 
-nav div, h1{
+nav div,
+h1,
+h3,
+article p {
     color: var(--nav-color);
 }
 
-nav div span{
+nav div span {
     color: var(--nav-color-2);
 }
 
-nav div span:hover{
+nav div span:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -115,7 +124,52 @@ nav div span:hover{
 
 
 
+h3 {
+    font-family: var(--secondary-font);
+    font-size: 14px;
+}
+
+article p {
+    font-family: var(--tertiary-font);
+    font-style: italic;
+    font-size:
+}
+
+article p span {
+    font-family: var(--primary-font);
+    color: var(--color-1);
+    font-weight: bold;
+    margin-left: 4%;
+}
 
 
+/*--BUTTON--*/
 
+article > button span {
+    border: solid 1.5px var(--nav-color-2);
+    background-color: white;
+    color: var(--nav-color-2);
+    font-family: var(--tertiary-font);
+    font-weight: normal;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 1.5% 1% 1.5% 1%;
+}
 
+article > button span:hover {
+    border: solid 1.5px var(--button-hover);
+    background-color: white;
+    color: var(--button-hover);
+
+}
+
+article > button {
+    border: none;
+    background-color: white;
+}
+
+/*
+.info{
+    border: 1px solid black;
+}
+*/
