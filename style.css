@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700&display=swap');
+
+:root {
+    --bg-color: #f2efea;
+    --primary-font: 'Libre Baskerville', serif;
+    --nav-color: #686868;
+    --nav-color-2: #722d23;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html{
+    background-color: var(--bg-color);
+    margin: 2%;
+}
+
+/*body {
+    background: url(maxresdefault.jpg) no-repeat right 50%;
+    background-size: cover;
+    height: 100vh;
+    background-color: var(--bg-color);
+    font-family: var(--primary-font);
+}*/
+
+
+section {
+    max-width: none;
+    margin: 0;
+}
+
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 3rem;
+}
+
+
+article {
+    margin-top: 12%;
+    display: flex;
+    flex-flow: column;
+}
+
+article > img {
+    order: -1;
+    align-self: center;
+}
+
+article {
+    padding: 2rem;
+}
+
+article > h3 {
+    margin: 1rem 1rem 0;
+}
+
+article > p {
+    margin: 0.25em 1rem 1rem;
+}
+
+main {
+   /* font-family: var(--primary-font);*/
+    font-size: 80%;
+}
+
+article {
+    background-color: white;
+}
+
+article > button {
+    margin-top: auto;
+    background: var(--color-4);
+    color: var(--link-color);
+    padding: 0.5rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*--NAVIGATION MENU--*/
+
+nav, h1{
+    font-family: var(--primary-font);
+    letter-spacing: 3px;
+    font-weight: bolder;
+    display:flex;
+    font-size: 16px;
+}
+
+nav div, h1{
+    color: var(--nav-color);
+}
+
+nav div span{
+    color: var(--nav-color-2);
+}
+
+nav div span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
