@@ -55,7 +55,6 @@ function handleData(jsonData) {
 
 }
 
-
 function showNav(nav) {
     console.log(nav.brand)
 
