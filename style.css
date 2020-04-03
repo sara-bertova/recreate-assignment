@@ -28,15 +28,6 @@ html {
     margin: 2%;
 }
 
-/*body {
-    background: url(maxresdefault.jpg) no-repeat right 50%;
-    background-size: cover;
-    height: 100vh;
-    background-color: var(--bg-color);
-    font-family: var(--primary-font);
-}*/
-
-
 section {
     max-width: none;
     margin: 0;
@@ -46,7 +37,7 @@ section {
 section {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-gap: 3rem;
+    grid-gap: 4rem;
 }
 
 
@@ -68,7 +59,7 @@ article {
 
 article > h3,
 h1 {
-    margin: 1rem 1rem 0;
+    margin: 1rem 0 0 0;
 }
 
 article > p,
@@ -76,22 +67,16 @@ article > p,
     margin: 0.25em 1rem 1rem;
 }
 
-main {
-    /* font-family: var(--primary-font);*/
-    font-size: 80%;
-}
-
 article {
     background-color: white;
 }
 
-article > button {
-    margin-top: 5%;
-    margin-bottom: auto;
+/*.content > button {
+    margin-bottom: 10px;
     padding: 0.5rem;
     font-size: 1.2rem;
     font-weight: bold;
-}
+}*/
 
 img {
     max-width: 100%;
@@ -128,7 +113,7 @@ nav div span:hover {
 }
 
 
-
+/*--STYLING--*/
 
 h3 {
     font-family: var(--secondary-font);
@@ -137,7 +122,9 @@ h3 {
 
 h1 {
     margin-top: 2%;
-    margin-bottom: 7%;
+    margin-bottom: 9px;
+    padding-bottom: 3px;
+    border-bottom: 1.5px solid #cccccc;
 }
 
 article p,
@@ -154,42 +141,49 @@ article p span {
 }
 
 
+
 /*--BUTTON--*/
 
-article > button span {
+button span {
     border: solid 1.5px var(--nav-color-2);
-    background-color: white;
     color: var(--nav-color-2);
     font-family: var(--tertiary-font);
     font-weight: normal;
-    text-align: center;
-    padding: 1.5% 1% 1.5% 1%;
+    /*text-align: center;*/
     cursor: pointer;
+    font-style: normal;
+    font-size: 18px;
+    padding: 5px;
+    width: 200px;
+    margin: 16px 15px;
+    background-color: white;
+    z-index: 15;
+
 }
 
-article > button span:hover {
+button span:hover {
     border: solid 1.5px var(--button-hover);
-    background-color: white;
     color: var(--button-hover);
-
 }
 
-article > button {
-    border: none;
+button {
     background-color: white;
+    border: none;
 }
 
-/*
-.info{
-    border: 1px solid black;
-}
-*/
+
+
 
 
 /*--COLOURS--*/
 
 .colors {
     display: flex;
+}
+
+.colors,
+article p {
+    margin: 16px 15px;
 }
 
 .colors > div {
@@ -203,26 +197,39 @@ article > button {
 }
 
 
+
+
+
 /*--LOGO--*/
 
-/*
-.logo{
-    width: 160px;
-    height: 35px;
-    background-color: var(--logo-color);
-}
-
-.text{
-    color: var(--logo-text);
-    font-family: var(--secondary-font);
-    font-weight: bold;
-}
-*/
-
-.logoimg{
+.logoimg {
     width: 200px;
     margin-bottom: 10px;
 }
+
+
+
+
+/*--ADDITIONAL STYLING--*/
+
+article p,
+.colors {
+    border-bottom: 1.5px solid #f6f2ef;
+    padding-bottom: 3px;
+}
+
+.content {
+    border: 1.5px solid #f6f2ef;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.status {
+    margin-bottom: 0px;
+    border: none;
+}
+
+
 
 
 /*--GO RESPONSIVE--*/
