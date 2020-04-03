@@ -64,11 +64,13 @@ article {
     padding: 2rem;
 }
 
-article > h3, h1 {
+article > h3,
+h1 {
     margin: 1rem 1rem 0;
 }
 
-article > p {
+article > p,
+.colors {
     margin: 0.25em 1rem 1rem;
 }
 
@@ -109,7 +111,8 @@ h1 {
 nav div,
 h1,
 h3,
-article p {
+article p,
+.colors {
     color: var(--nav-color);
 }
 
@@ -135,7 +138,8 @@ h1 {
     margin-bottom: 7%;
 }
 
-article p {
+article p,
+.colors {
     font-family: var(--tertiary-font);
     font-style: italic;
 }
@@ -178,3 +182,30 @@ article > button {
     border: 1px solid black;
 }
 */
+
+
+/*--COLOURS--*/
+
+.colors {
+    display: flex;
+}
+
+.colors > div {
+    height: 20px;
+    width: 20px;
+    margin-left: 5%;
+}
+
+.colours {
+    display: none;
+}
+
+
+/*--GO RESPONSIVE--*/
+
+@media only screen and (max-width:440px) {
+
+    section {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
