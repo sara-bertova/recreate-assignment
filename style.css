@@ -155,7 +155,7 @@ button span {
     font-size: 18px;
     padding: 5px;
     width: 200px;
-    margin: 16px 15px;
+    margin: 16px;
     background-color: white;
     z-index: 15;
 
@@ -209,6 +209,7 @@ article p {
 .logoimg {
     width: 200px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 
