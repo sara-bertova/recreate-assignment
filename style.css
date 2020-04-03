@@ -13,6 +13,8 @@
     --nav-color-2: #722d23;
     --color-1: #221610;
     --button-hover: #9a581b;
+    /*--logo-color: #18110b;
+    --logo-text: #fdfdfd;*/
 }
 
 *,
@@ -198,6 +200,28 @@ article > button {
 
 .colours {
     display: none;
+}
+
+
+/*--LOGO--*/
+
+/*
+.logo{
+    width: 160px;
+    height: 35px;
+    background-color: var(--logo-color);
+}
+
+.text{
+    color: var(--logo-text);
+    font-family: var(--secondary-font);
+    font-weight: bold;
+}
+*/
+
+.logoimg{
+    width: 200px;
+    margin-bottom: 10px;
 }
 
 
